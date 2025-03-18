@@ -1,0 +1,30 @@
+
+.nav {
+    display: flex;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-around;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    color: black;
+}
+
+.rightContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
