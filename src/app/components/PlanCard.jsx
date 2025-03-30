@@ -25,7 +25,9 @@ const PlanCard = ({ name, description, price, features }) => {
                     );
                 })}
             </ul>
-            <Button buttonName="Start Free"></Button>
+            <div className={planCardStyles.buttonContainer}>
+                <Button buttonName="Start Free"></Button>
+            </div>
         </div>
     );
 }
