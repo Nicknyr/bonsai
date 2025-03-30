@@ -38,8 +38,8 @@ const Navbar = () => {
                 </li>
             </ul>
             </nav>
-            <a href="/" className={navbarStyles.button}><button>Log in</button></a>
-            <a href="/" className={navbarStyles.button}><button>Start Free</button></a>
+            <a href="/" className={navbarStyles.button}><Button>Log in</Button></a>
+            <a href="/" className={navbarStyles.button}><Button>Start Free</Button></a>
         </header>
     )
 };

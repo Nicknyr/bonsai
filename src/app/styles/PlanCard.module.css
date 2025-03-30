@@ -1,9 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    
+    @media (min-width: 769px) {
+        display: flex;
+        flex-wrap: auto;
+    }
+}
+
 .card {
-    height: 30rem;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 2px solid lightgrey;
+    border: 1px solid lightgrey;
     margin: 10rem 0;
     border-radius: 5px;
+    padding-top: 23px;
+    padding-left: 23px;
+    padding-right: 23px;
+    color: black;
+    padding-bottom: 40px;
+    
+    @media (min-width: 769px) {
+       flex: 1;
+    }
+}
+
+.price {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.horizontalRule {
+    height: 2.5px;
+    background-color: #00b289;
+    border: none;
+    margin-bottom: 25px;
+}
+
+.features {
+    list-style-type: none;
+}
+
+.featureItem {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.checkmark {
+    margin-right: .625rem;
 }

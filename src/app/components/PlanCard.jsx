@@ -1,4 +1,7 @@
 import planCardStyles from '../styles/PlanCard.module.css';
+import Image from 'next/image';
+import Button from './Button.jsx';
+import Checkmark from '../../../public/checkmark.svg';
 
 const PlanCard = ({ name, description, price, features }) => {
     return (
@@ -8,12 +11,21 @@ const PlanCard = ({ name, description, price, features }) => {
                 <p> {description} </p>
             </div>
             <div className={planCardStyles.price}>
-                { price }
+                $ { price }
+                <span>/MONTH</span>
             </div>
-            <hr />
-            <div className={planCardStyles.features}>
-                { features }
-            </div>
+            <hr className={planCardStyles.horizontalRule}/>
+            <ul className={planCardStyles.features}>
+                {features.map((feature, index) => {
+                    return (
+                        <div className={planCardStyles.featureItem}>  
+                            <Image src={Checkmark} className={planCardStyles.checkmark} alt="Checkmark" height="10" width="10" />
+                            <li key={index}>{feature}</li>
+                        </div>
+                    );
+                })}
+            </ul>
+            <Button buttonName="Start Free"></Button>
         </div>
     );
 }
