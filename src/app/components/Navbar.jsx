@@ -3,34 +3,44 @@ import Image from 'next/image';
 import Button from './Button.jsx';
 import navbarStyles from '../styles/Navbar.module.css';
 import Logo from '../../../public/bonsai.svg';
+import Hamburger from '../../../public/hamburger.svg';
 
 const Navbar = () => {
     return (
-        <nav className={navbarStyles.nav}>
-            <div className={navbarStyles.logoContainer}>
-                <Image src={Logo} alt="Bonsai Logo" width={120} height={120}/>
-            </div>
-            <div className={navbarStyles.rightContainer}>
-                <ul>
-                    <li>
-                        <Link href='/'>Product</Link>
-                    </li>
-                    <li> 
-                        <Link href='/'>Templates</Link>
-                    </li>
-                    <li>
-                        <Link href='/'>Pricing</Link>
-                    </li>
-                    <li>
-                        <Link href='/'>Reviews</Link>
-                    </li>
-                </ul>
-                <div className={navbarStyles.buttonContainer}>
-                    <Button buttonName='Log In'></Button>
-                    <Button buttonName='Start Free'></Button>
-                </div>
-            </div>
-        </nav>
+        <header className={navbarStyles.header}>
+            <Image 
+                className={navbarStyles.logo}
+                src={Logo}
+                alt="Bonsai Logo"
+                height="100"
+                width="150"
+            />
+            <nav className={navbarStyles.nav}>
+            <Image 
+                className={navbarStyles.hamburger}
+                src={Hamburger}
+                alt="Hamburger Menu"
+                height="35"
+                width="35"
+            />
+            <ul className={navbarStyles.ul}>
+                <li>
+                <a href="/">Products</a>
+                </li>
+                <li>
+                <a href="/">Templates</a>
+                </li>
+                <li>
+                <a href="/">Pricing</a>
+                </li>
+                <li>
+                <a href="/">Reviews</a>
+                </li>
+            </ul>
+            </nav>
+            <a href="/" className={navbarStyles.button}><button>Log in</button></a>
+            <a href="/" className={navbarStyles.button}><button>Start Free</button></a>
+        </header>
     )
 };
 
