@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from './components/Navbar.jsx';
 import BusinessCard from './components/BusinessCard.jsx';
 import PlanCard from './components/PlanCard.jsx';
+import Questions from './components/Questions.jsx';
 import Footer from './components/Footer.jsx';
 import Button from './components/Button.jsx';
 import styles from "./page.module.css";
@@ -63,6 +64,7 @@ export default function Home() {
           />
         </section>
         <BusinessCard />
+        <Questions />
         <Footer />
       </main>
     </div>

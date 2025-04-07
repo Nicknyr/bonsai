@@ -14,16 +14,20 @@
     display: flex;
     flex-direction: column;
     border: 1px solid lightgrey;
-    margin: 10rem 1rem;
     border-radius: 5px;
-    padding-top: 23px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     padding-left: 23px;
     padding-right: 23px;
     color: black;
     padding-bottom: 40px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     
     @media (min-width: 769px) {
        flex: 1;
+       margin: 10rem 1rem;
+       padding-top: 23px;
     }
 }
 
@@ -41,6 +45,7 @@
 
 .features {
     list-style-type: none;
+    margin-bottom: 3rem;
 }
 
 .featureItem {

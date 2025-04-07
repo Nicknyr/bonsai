@@ -1,0 +1,22 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 3rem 1rem;
+}
+
+.question {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.h2 {
+    color: #4c4d5f;
+    margin-top: 1rem;
+}
+
+.caret {
+    align-self: center;
+}
